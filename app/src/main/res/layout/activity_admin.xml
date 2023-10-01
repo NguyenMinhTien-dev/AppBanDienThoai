@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.AdminActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarSP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#d70018"
+        android:backgroundTint="#881F43"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:title="Admin"
+        app:titleTextColor="@color/white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:background="@drawable/backgroundadmin"
+            android:layout_height="200dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="QUẢN LÝ CỬA HÀNG"
+            android:textColor="@color/white"
+            android:textSize="30dp" />
+
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:layout_gravity="center">
+
+            <TableRow
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center">
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/btnKH"
+                        android:layout_width="170dp"
+                        android:layout_height="170dp"
+                        android:background="@drawable/khachhang" />
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Khách hàng"
+                        android:textSize="22dp" />
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/btnSP"
+                        android:layout_width="170dp"
+                        android:layout_height="170dp"
+                        android:background="@drawable/sanpham" />
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Sản phẩm"
+                        android:textSize="22dp" />
+                </LinearLayout>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center">
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/btnHD"
+                        android:layout_width="170dp"
+                        android:layout_height="170dp"
+                        android:background="@drawable/hoadon" />
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Hóa đơn"
+                        android:textSize="22dp" />
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/btnVC"
+                        android:layout_width="170dp"
+                        android:layout_height="170dp"
+                        android:background="@drawable/voucher" />
+
+                    <TextView
+                        android:id="@+id/textView12"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Voucher"
+                        android:textSize="22dp" />
+                </LinearLayout>
+
+
+            </TableRow>
+
+        </TableLayout>
+    </ScrollView>
+</LinearLayout>

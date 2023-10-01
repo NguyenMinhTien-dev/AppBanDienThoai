@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".Activity.MainActivity">
 
     <androidx.drawerlayout.widget.DrawerLayout
         android:id="@+id/drawerLayout"
@@ -66,9 +66,21 @@
                 <ViewFlipper
                     android:id="@+id/viewFlipper"
                     android:layout_width="match_parent"
-                    android:layout_height="200dp">
+                    android:layout_height="300dp">
 
+                    <androidx.viewpager.widget.ViewPager
+                        android:id="@+id/viewpager"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp" />
+
+                    <me.relex.circleindicator.CircleIndicator
+                        android:id="@+id/circle_indicator"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="16dp"/>
                 </ViewFlipper>
+
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -111,7 +123,6 @@
                         android:text="ĐIỆN THOẠI NỔI BẬT"
                         android:textSize="20dp"
                         android:textStyle="bold" />
-
                     <androidx.recyclerview.widget.RecyclerView
                         android:id="@+id/listsaleProduct"
                         android:layout_width="match_parent"
@@ -119,13 +130,36 @@
                         android:layout_marginLeft="5dp"
                         android:layout_marginTop="10dp"
                         android:orientation="horizontal">
-
                     </androidx.recyclerview.widget.RecyclerView>
                 </LinearLayout>
-
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#d70018"
+                    tools:ignore="Orientation">
+                    <TextView
+                        android:layout_marginTop="8dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textStyle="italic"
+                        android:textSize="13dp"
+                        android:text="               Công ty TNHH Thương Mại và Dịch Vụ Kỹ Thuật DIỆU PHÚC \n                      GPĐKKD: 0316172372 cấp tại Sở KH - ĐT TP. HCM.\n                Địa chỉ văn phòng: 350-352 Võ Văn Kiệt, Phường Cô Giang,\n                                       Quận 1, Thành phố Hồ Chí Minh,\n                                            Điện thoại: 028.7108.9666"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#d70018">
+                    <ImageView
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="155dp"
+                        android:background="#d70018"
+                        android:src="@drawable/chungnhan"
+                        android:scaleType="fitXY"/>
+                </LinearLayout>
             </LinearLayout>
         </ScrollView>
-
         <com.google.android.material.navigation.NavigationView
             android:id="@+id/navigationView"
             android:layout_gravity="start"
@@ -137,27 +171,22 @@
                 android:id="@+id/listManHinh"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="150dp" />
+                android:layout_marginTop="250dp"/>
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                >
+                android:layout_height="wrap_content">
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="130dp"
-                    android:background="#E1CFBB"
+                    android:background="#d70018"
                     />
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/loglavieestbelle"
-
-                    />
-
+                    android:src="@drawable/logochinh"
+                    android:scaleType="centerCrop" />
             </RelativeLayout>
         </com.google.android.material.navigation.NavigationView>
     </androidx.drawerlayout.widget.DrawerLayout>
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>

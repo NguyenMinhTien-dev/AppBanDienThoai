@@ -1,4 +1,4 @@
-package com.example.appbandienthoai.Class;
+package com.example.appbandienthoai;
 
 public class GioHang {
     Integer soLuong, idCartList, hinhSanPham;
@@ -92,6 +92,5 @@ public class GioHang {
     public void setTenSP(String tenSP) {
         this.tenSP = tenSP;
     }
-
 
 }
