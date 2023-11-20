@@ -21,7 +21,7 @@
                     android:id="@+id/toolbarManhinhChinh"
                     android:layout_width="match_parent"
                     android:layout_height="?attr/actionBarSize"
-                    android:background="#E1CFBB"
+                    android:background="#d70018"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"

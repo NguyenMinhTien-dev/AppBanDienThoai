@@ -65,8 +65,8 @@ public class QLSanPham {
                             +"\nTên sản phẩm: " + s.getTENSP()
                             +"\nPhân loại: " + s.getPHANLOAI()
                             +"\nSố lượng: " + s.getSOLUONG()
-                            +"\nNơi nhập: " + s.getNOINHAP()
-                            +"\nNội dung: " + s.getNOIDUNG()
+                            +"\nGiới thiệu: " + s.getNOINHAP()
+                            +"\nChi tiết sản phẩm: " + s.getNOIDUNG()
                             +"\nĐơn giá: " + s.getDONGIA()
                             +"\nMã ảnh: " +s.getHINHANH();
             //đưa chuỗi vào list
